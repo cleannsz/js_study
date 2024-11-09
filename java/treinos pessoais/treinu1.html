@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>treino</title>
+</head>
+<body>
+
+    <h1>Digite sua idade para entrar</h1>
+    Tua idade: <input type="number" name="tn1" id="tn1">
+
+    <input type="button" value="calcular" onclick="calcular()">
+    <div id="tn2"></div>
+
+    <script>
+        function calcular() {
+            var tn2 = window.document.getElementById('tn2')
+            var tn1 = window.document.getElementById('tn1')
+            var tn1 = Number(tn1.value)
+            var calcular = window.document.getElementById('calcular')
+
+            if(tn1 < 18) {
+                tn2.innerHTML = 'Tu nao pod entrar'
+                tn2.style.background = 'red'
+                tn2.style.color = 'white'
+            }else if(tn1 <40){
+                tn2.innerHTML = 'Se pode entra'
+                tn2.style.background = 'green'
+            }else if(tn1 > 39) {
+                tn2.innerHTML = 'Seu pai é velho'
+                tn2.style.background = 'blue'
+            } 
+        }
+    </script>
+
+</body>
+</html>

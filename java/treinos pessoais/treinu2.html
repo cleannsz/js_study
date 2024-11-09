@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>impar par</title>
+</head>
+<body>
+    <h1>Descubra se o número é ímpar ou par...</h1>
+    <input type="number" name="n1" id="num1">
+    <input type="button" value="saber" onclick="descobrir()">
+    <div id="res">resultado</div>
+    
+    <script>
+        function descobrir() {
+            var tn1 = window.document.getElementById('num1')
+            var n1 = Number(tn1.value)
+            var n2 = n1 % 2
+            var res = window.document.getElementById('res')
+            if(n2 == 0){
+                res.innerHTML = 'par'
+            }else{
+                res.innerHTML = 'impar'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+
+    <style>
+        body {
+            background-color: pink;
+            font: normal 22px Arial;
+            color: black;
+        }
+        #carrao {
+            background-color: #461414;
+            font: normal 40px Arial;
+            color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro: <input type="number" name="vel" id="vel">
+    <input type="button" value="verifika" onclick="calcular()">
+    <p id="carrao">coloq a velo do carro</p>
+    <script>
+        function calcular() {
+
+            var velo = window.document.getElementById('vel')
+            var velo = Number(vel.value)
+            var vrum = window.document.getElementById('carrao')
+
+            if(velo > 100){
+                vrum.innerHTML = 'tu foi mutado pcr'
+                vrum.style.background = 'red'
+            }else {
+                vrum.innerHTML = 'se ta limpo'
+                vrum.style.background = 'green'
+            }
+
+        }
+    </script>
+</body>
+</html>

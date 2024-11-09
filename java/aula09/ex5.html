@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>começano co DOM</title>
+    <style>
+        body {
+            background: rgb(167, 59, 59);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>aprendenu dom</h1>
+
+    <p>aki vai o resultado</p>
+    <p>aprendenu usa o <strong>DOM</strong> em javastrupo.</p>
+    <p>lalau123</p>
+    <p>gapgpapga</p>
+
+    <div id="msg">clika ne eu</div>
+
+    <script>
+
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var d = window.document.getElementById('msg')
+
+        corpo.style.background = 'black'
+        d.style.background = 'green'
+        p1.style.color = 'blue'
+        p1.style.background = 'pink'
+        p1.innerHTML = 'free fire'
+        d.innerText = 'kpacapa'
+
+    </script>
+</body>
+</html>

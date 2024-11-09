@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tudo q eu n sei</title>
+</head>
+<body>
+
+    <input type="button" name="clique" id="clique" value="clique" onclick="clique()">
+    <table border="10" bgcolor="pink">
+        <tr>
+            <th id="numero1">n1</th> <td>+</td> <th id="numero2">n2</th> <td>=</td> <th id="resultado">s</th>
+        </tr>
+    </table>
+
+    <script>
+
+        function clique() {
+            var n1 = Number(window.prompt('taca um numero ae'))
+            var n2 = Number(window.prompt('taca oto ai'))
+            var s = n1 + n2    
+            var ru = document.getElementById('numero1')
+            ru.innerHTML = n1
+            var re = document.getElementById('numero2')
+            re.innerHTML = n2
+            var ra =document.getElementById('resultado')
+            ra.innerHTML = s
+        }
+        
+
+    </script>
+
+</body>
+</html>
